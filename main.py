@@ -11,11 +11,11 @@ emotion_detector = FER(mtcnn=True)
 # Function to map emotions to emoji image file paths
 def get_emoji_image_path(emotion):
     emoji_dict = {
-        "angry": r"C:\Users\umad3\emojis\angry.png",
-        "sad": r"C:\Users\umad3\emojis\sad.png"
+        "angry": r"images path",
+        "sad": r"images path"
         # Add more emotions and paths as needed
     }
-    return emoji_dict.get(emotion, r"C:\Users\umad3\emojis\neutral.png")
+    return emoji_dict.get(emotion, r"img path")
 
 # Function to overlay emoji on frame
 def overlay_emoji(frame, emoji_image_path, x, y, w, h):
